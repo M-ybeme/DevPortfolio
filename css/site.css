@@ -11,7 +11,12 @@
 
     --mdm-font-size: 1.2rem;
     --mdm-font-weight: 400;
-    --mdm-line-height: 1.5rem;   
+    --mdm-line-height: 1.5rem;
+
+    --mdm-title-font: font-family: 'Bebas Neue', sans-serif;
+    --mdm-subtitle-font: font-family: 'Roboto', sans-serif;
+    --mdm-body-font: font-family: 'Bebas Neue', sans-serif;
+    
 }
 
 .html,body{
@@ -24,13 +29,15 @@ body{
 
     font-size:var(--mdm-font-size);
     font-weight: var(--mdm-font-weight);
-    font-height:var(--mdm-line-height);
+    line-height:var(--mdm-line-height);
+    font-family:var(--mdm-body-font);
 }
 
 /* Sticky Footer and page layout*/
 
 header{
     margin-top: 74px;
+    font-family: var(--mdm-subtitle-font);
 }
 
 main{
@@ -72,16 +79,38 @@ footer{
     background-color:var(--mdm-light-color);
 }
 
-/* Main Title Styles */
-.mainTitle{
-    font-size: 6rem;
-    line-height: 5rem;
+/* Mainheader Wrapper */
+.mainHeader-wrapper{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.mainTitle
+/* Main Title Styles */
+.mainTitle{
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-family:var(--mdm-title-font);
+}
 
 .mainLogo{
     height: .6em;
+}
+
+.subTitle{
+    font-size: .8rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: .09rem;
+    color: var(--mdm-dark-color);
+    font-family:var(--mdm-subtitle-font);
+}
+
+.profilePic{
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--mdm-dark-color);
+    box-shadow: 0px 7px 10px rgba(0,0,0, .5);
 }
 
 /* Media Queries */
@@ -97,6 +126,16 @@ footer{
         background-image: url(/img/DevPortFolioBG_992.png);
         height: 300px;
     }
+    .mainTitle{
+        font-size:4.5rem;
+        line-height:3.5rem;
+    }
+    .subTitle{
+        font-size:1.2rem;
+        line-height:1.5rem;
+        font-weight:300;
+        letter-spacing: .1rem;
+    }
 }
 
 @media (min-width: 991.98px){
@@ -110,5 +149,16 @@ footer{
     .mainHeader{
         background-image: url(/img/DevPortFolioBG_2560.png);
         height:  500px;
+    }
+    .mainTitle{
+        font-size: 5rem;
+        font-weight: 5rem;   
+    }
+    .subTitle{
+        font-size: 1.7rem;
+        line-height: 1rem;
+        font-weight:300;
+        letter-spacing: .1rem;
+
     }
 }
