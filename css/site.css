@@ -1,0 +1,114 @@
+:root{
+    --mdm-primary-color: #2b6461;
+    --mdm-secondary-color: #e2c957;
+    --mdm-highlight-color: #6fcbc6;
+    --mdm-dark-color: #212121;
+    --mdm-light-color: #a1bbd1;
+    --mdm-background-color: #fafafacc;
+    --mdm-title-color: var(--mdm-dark-color);
+    --mdm-nav-toggler-glow: hsla(49, 71%, 61%, 0.685);
+    --mdm-nav-toggler-color: var(--mdm-highlight-color);
+
+    --mdm-font-size: 1.2rem;
+    --mdm-font-weight: 400;
+    --mdm-line-height: 1.5rem;   
+}
+
+.html,body{
+    height:100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    font-size:var(--mdm-font-size);
+    font-weight: var(--mdm-font-weight);
+    font-height:var(--mdm-line-height);
+}
+
+/* Sticky Footer and page layout*/
+
+header{
+    margin-top: 74px;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+footer{
+    flex-shrink: 0;
+}
+
+/* Navbar Overrides */
+#mainNav{
+    background: var(--mdm-dark-color);
+
+}
+
+#mainNav-button{
+    border-color:var(--mdm-highlight-color);
+}
+
+#navbar-toggler{
+    color:var(--mdm-nav-toggler-glow) !important;
+}
+
+.navbar-toggler-icon-cf{
+    color:var(--mdm-nav-toggler-color);
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align:middle;
+}
+/* Navbar overrides end */
+
+/* Main Header Styles */
+.mainHeader{
+    background-image: url(/img/DevPortFolioBG_576.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color:var(--mdm-light-color);
+}
+
+/* Main Title Styles */
+.mainTitle{
+    font-size: 6rem;
+    line-height: 5rem;
+}
+
+.mainTitle
+
+.mainLogo{
+    height: .6em;
+}
+
+/* Media Queries */
+@media (min-width: 575.98px){
+    .mainHeader{
+        background-image: url(/img/DevPortFolioBG_767.png);
+        height: 300px;
+    }
+}
+
+@media (min-width: 767.98px){
+    .mainHeader{
+        background-image: url(/img/DevPortFolioBG_992.png);
+        height: 300px;
+    }
+}
+
+@media (min-width: 991.98px){
+    .mainHeader{
+        background-image: url(/img/DevPortFolioBG_1200.png);
+        height: 400px;
+    }
+}
+
+@media (min-width: 1199.98px){
+    .mainHeader{
+        background-image: url(/img/DevPortFolioBG_2560.png);
+        height:  500px;
+    }
+}
