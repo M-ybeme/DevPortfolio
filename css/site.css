@@ -76,7 +76,7 @@ footer{
     height: 200px;
     background-repeat: no-repeat;
     background-position: right top;
-    background-color:var(--mdm-light-color);
+    background-color:var(--mdm-secondary-color);
 }
 
 /* Mainheader Wrapper */
