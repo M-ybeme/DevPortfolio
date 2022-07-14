@@ -27,8 +27,16 @@
 
     <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/c-icon">
 
+    <!-- Blog Card Style sheet -->
+    <link href="/css/blogcard.css" rel="stylesheet">
+
+    <!-- Hovercard Stylesheet -->
+    <link href="/css/hovercard.css" rel="stylesheet">
+
     <!-- Custom Style Sheet. -->
     <link href="/css/site.css" rel="stylesheet">
+
+
 
     
 </head>
@@ -79,7 +87,7 @@
         <div class="mainHeader">
             <div class="mainHeader-content h-100 d-flex align-items-center">
                 <div class="mainHeader-wrapper">
-                    <div class="mainTitle">MARLO<span><img src="/img/Black logo - no background.png" class="mainLogo"></span></div>
+                    <div class="mainTitle">MARLO<span><img src="/img/Black logo - no background_resized.png" class="mainLogo"></span></div>
                     <div class="mainTitle">MABERRY</div>
                     <div class="subTitle pt-2">WEB DEVELOPER</div>
                     <a class="btn btn-primary mt-3" href="#contact">CONTACT ME</a>
@@ -90,7 +98,7 @@
 
        <!-- Main Container area -->
        <main class="container-xxl">
-        <section id="about">
+        <section id="about" class="section-page">
             <h1>About me</h1>
             <div class="row">
                 <div class="col-12 col-lg-4">
@@ -118,7 +126,7 @@
                         </div>
                             <div class="col-12 col-lg-6">
                                 <span class="fw-bold">Email: </span> <span>
-                                    <a href="marlomayberry.90@gmail.com"></a>
+                                    <a href="marlomayberry.90@gmail.com" class="mail-link">Marlomayberry.90@gmail.com</a>
                                 </span>
                             </div>
                             <div class="col-12">
@@ -131,21 +139,382 @@
                     </address>
             </div>
         </section>
-        <section id="skills">
-            <H1>Skills</H1>
+        <section id="skills" class="section-page">
+            <div class="row">
+                <div class="col-12">
+                <H1>What I Use</H1>
+                <p>
+                    I am a creative problem solver. I build full-stack web and
+                        mobile applications. I use C#, SQL, ASP.NET, Javascript,
+                        Xamarin, Bootstrap, HTML and CSS. I have highlighted my key
+
+                </p>
+            </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <i class="devicon-csharp-plain colored devicons"></i>
+                    <p>
+                        I use C# on a daily basis to build websites and mobile
+                        applications. You can see examples of my work implementing
+                        C# in my projects sections
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="devicon-dotnetcore-plain colored devicons"></i>
+                    <p>
+                        I use proven design patterns and frrameworks to build websites. 
+                        ASP>NET Core Web and MVC fits the bill for most projects. 
+                        Visit my Projects to see examples.
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="devicon-javascript-plain colored devicons"></i>
+                    <p>
+                        Javvascript is the language of the web. I use
+                         vanilla js and I am comfortable with js frameworks. 
+                         Check out my challenges seciont for some js projects.
+                    </p>
+                </div>
+                <div class="col">
+                    <span>
+                        <i class="devicon-html5-plain colored devicons"></i>
+                        <i class="devicon-css3-plain colored devicons"></i>
+                        <i class="devicon-bootstrap-plain colored devicons"></i>
+                    </span>
+                    <p>
+                        I use HTML, CSS, and Bootstrap to build beautiful 
+                        responsive websites. Bootstrap is my go to CSS framework.
+                         Many shy away from front-end, but I embrace it.
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="devicon-postgresql-plain colored devicons"></i>
+                    <p>
+                        SQL is the language of the database. My projects
+                         all utilize a database. I have used Postgres
+                          all of them. I can Write SQL on any DB platform.
+                    </p>
+                </div>
+
+            </div>
         </section>
-        <section id="projects">
-            <h1>Things I've built</h1>
+        <section id="projects" class="section-page">
+            <div class="row gy-5">
+                <div class="col-12">
+                    <h1>Things I've built</h1>
+                    <p>
+                        Showcasing complete functional projects demonstrates what I
+                        can bring to your project. I built these projects from the
+                        ground up to demonstrate skill with front-end, back-end, security
+                        and database development. All these projects are full-stack
+                        web projects that are published so that you can demo them
+                        easily. Contact me to get a complete code walk through.
+
+                    </p>
+                </div>
+            </div>
+            <div class="row row-cols-lg-3">
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <sorces src="/img/logos/BugTracker_600.jpg" media="min-width: 911.98px)" />
+                                <img src="/img/logos/BugTracker_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p> A full stack bug tracker built with Asp.net MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <sorces src="/img/logos/ExpenseTracker_600.jpg" media="min-width: 911.98px)" />
+                                <img src="/img/logos/ExpenseTracker_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                            <p> A full stack expense tracker built with Asp.net MVC, C# and SQL.</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <sorces src="/img/logos/Blog_600.jpg" media="min-width: 911.98px)" />
+                                <img src="/img/logos/Blog_200.jpg">
+                            </picture>
+                        <div class="hc-content">
+                            <p> A full stack expense tracker built with Asp.net MVC, C# and SQL.</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
-        <section id="challenges">
-            <h1>Smaller Things I've built</h1>
+        <section id="challenges" class="section-page">
+            <div class="row  row-cols-1 row-cols-md-3 gy-5">
+                <div class="col-12">
+                    <h1>Smaller Things I've built</h1>
+                    <p>Coding Challenges are smaller in scope and scale than 
+                        my full-stack-projects. These problems are fun to 
+                        solve and also showcase some... </p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5">
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <sorces src="/img/logos/LoanShark_600.png" media="min-width: 911.98px)" />
+                                <img src="/img/logos/LoanShark_200.png">
+                            </picture>
+                        <div class="hc-content">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <sorces src="/img/logos/tacocat_600.png" media="min-width: 911.98px)" />
+                                <img src="/img/logos/tacocat_200.png">
+                            </picture>
+                        <div class="hc-content">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <sorces src="/img/logos/Tasker_600.png" media="min-width: 911.98px)" />
+                                <img src="/img/logos/Tasker_200.png">
+                            </picture>
+                        <div class="hc-content">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <sorces src="/img/logos/fizzbuzz_600.jpg" media="min-width: 911.98px)" />
+                                <img src="/img/logos/fizzbuzz_200.jpg">
+                            </picture>
+                        <div class="hc-content">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <sorces src="/img/logos/Notary_600.jpg" media="min-width: 911.98px)" />
+                                <img src="/img/logos/Notary_200.jpg">
+                            </picture>
+                        <div class="hc-content">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <sorces src="/img/logos/Superdog_600.jpg" media="min-width: 911.98px)" />
+                                <img src="/img/logos/Superdog_200.jpg">
+                            </picture>
+                        <div class="hc-content">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
-        <section id="cta"></section>
-        <section id="blog">
-            <h1>Stuff I write abuout</h1>
+        <section id="cta" class="section-cta d-flex align-items-center justify-content-center">
+            <a href="" class="cta-arrow link-style">
+                <i class="bi bi-arrow-right-square-fill"></i>
+            </a>
+            <span class="px-3 fs-2">Project Highlight: Bug tracker demo!</span>
+            <a href="" class="cta-arrow link-style">
+                <i class="bi bi-arrow-left-square-fill"></i>
+            </a>
         </section>
-        <section id="contact">
-            <h1>Let's Chat</h1>
+        <section id="blog" class="section-page">
+            <h1>Stuff I write about</h1>
+            <p>I try to write on my blog on a regular basis. I like to share my knowledge.</p>
+            <div class="d-flex flex-column align-itemss-center align-items-md-start">
+                <article class="card mb-4 blog-article">
+                    <div class="row blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-imgage-link" href="#">
+                                <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog=image" alt="Flying Girl">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month"> July</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2>Make SQL queries Fly</h2>
+                                <p class="card-text line-clamp">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Quia repellendus laudantium alias, nemo dicta labore, dolor
+                                     facilis sed laborum consequatur ducimus sapiente voluptate magni
+                                      perspiciatis provident corporis veniam odit minima.
+                                </p>
+                                <div class=text-start>
+                                    <a href="# class=btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Published 3 minutes ago...</small></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+                <article class="card mb-4 blog-article">
+                    <div class="row blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-imgage-link" href="#">
+                                <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog=image" alt="Decision Road">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month"> July</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2>Make SQL queries Fly</h2>
+                                <p class="card-text line-clamp">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Quia repellendus laudantium alias, nemo dicta labore, dolor
+                                     facilis sed laborum consequatur ducimus sapiente voluptate magni
+                                      perspiciatis provident corporis veniam odit minima.
+                                </p>
+                                <div class=text-start>
+                                    <a href="# class=btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Published 3 minutes ago...</small></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+                <article class="card mb-4 blog-article">
+                    <div class="row blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-imgage-link" href="#">
+                                <img src="/img/Blog/Blog_CodeTag.jpg" class="blog=image" alt="Coding Tags">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month"> July</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2>Make SQL queries Fly</h2>
+                                <p class="card-text line-clamp">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Quia repellendus laudantium alias, nemo dicta labore, dolor
+                                     facilis sed laborum consequatur ducimus sapiente voluptate magni
+                                      perspiciatis provident corporis veniam odit minima.
+                                </p>
+                                <div class=text-start>
+                                    <a href="# class=btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Published 3 minutes ago...</small></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+                <article class="card mb-4 blog-article">
+                    <div class="row blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-imgage-link" href="#">
+                                <img src="/img/Blog/Blog_Database.jpg" class="blog=image" alt="database">
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month"> July</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2>Make SQL queries Fly</h2>
+                                <p class="card-text line-clamp">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Quia repellendus laudantium alias, nemo dicta labore, dolor
+                                     facilis sed laborum consequatur ducimus sapiente voluptate magni
+                                      perspiciatis provident corporis veniam odit minima.
+                                </p>
+                                <div class=text-start>
+                                    <a href="# class=btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text"><small class="text-muted">Published 3 minutes ago...</small></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+        <section id="contact" class="section-page">
+            <div class="container mt-5">
+                <h1 class="text-start">Contact Me</h1>
+                <div class="p-2">
+                    <form>
+                        <div class="row g-2">
+                            <div class="col-12 col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" name="firstName" class="form-control" placeholder="First Name" aria-label="First Name" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" name="lastName" class="form-control" placeholder="Last Name" aria-label="Last Name" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" palceholder="Email" aria-label="Email" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="phone" class="form-label">Phone(Optional)</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" name="subject" class="form-control" palceholder="Subject" aria-label="Subject" required> 
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea type="text" name="message" class="form-control" placeholder="Enter a message" aria-label="Message" required rows="5" maxlength="280"></textarea>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn-info mt-2">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+               </div>
         </section>
        </main>
 

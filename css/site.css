@@ -1,13 +1,14 @@
 :root{
-    --mdm-primary-color: #2b6461;
-    --mdm-secondary-color: #e2c957;
-    --mdm-highlight-color: #6fcbc6;
+    --mdm-primary-color: #49beb7;
+    --mdm-secondary-color: #6bbbe9;
+    --mdm-highlight-color: #baeeeb;
     --mdm-dark-color: #212121;
-    --mdm-light-color: #a1bbd1;
+    --mdm-light-color: #ebf5fd;
     --mdm-background-color: #fafafacc;
     --mdm-title-color: var(--mdm-dark-color);
     --mdm-nav-toggler-glow: hsla(49, 71%, 61%, 0.685);
     --mdm-nav-toggler-color: var(--mdm-highlight-color);
+    --mdm-offset-color: #7b74e7;
 
     --mdm-font-size: 1.2rem;
     --mdm-font-weight: 400;
@@ -26,11 +27,12 @@
 body{
     display: flex;
     flex-direction: column;
-
+    background-color: var(--mdm-background-color);
     font-size:var(--mdm-font-size);
     font-weight: var(--mdm-font-weight);
     line-height:var(--mdm-line-height);
     font-family:var(--mdm-body-font);
+    color:var(--mdm-dark-color);
 }
 
 /* Sticky Footer and page layout*/
@@ -55,7 +57,7 @@ footer{
 }
 
 #mainNav-button{
-    border-color:var(--mdm-highlight-color);
+    border-color:var(--mdm-primary-color);
 }
 
 #navbar-toggler{
@@ -76,7 +78,34 @@ footer{
     height: 200px;
     background-repeat: no-repeat;
     background-position: right top;
-    background-color:var(--mdm-secondary-color);
+    background-color:var(--mdm-highlight-color);
+    color: var(--mdm-dark-color);
+}
+
+.mainHeader-cover{
+    background-image:url(/img/cityBG_2560.png);
+    background-repeat: no-repeat;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    background-position: top left;
+    overflow: hidden;
+}
+
+.maainHeader-cover>.mainHeader-content{
+    backdrop-filter: blur(3px) heu-rotate(120deg) brightness(50%) contrast(15%0) saturate(150%);
+    -webkit-backdrop-filter: blur(3px) heu-rotate(120deg) brightness(50%) contrast(150%) saturate(150%);
+}
+
+.devicons{
+    font-size: 4rem;
+}
+
+@supports not(backdrop-filter:blur(3px)){
+    .maainHeader-cover>.mainHeader-content{
+        background-color: rgb(0,37,46,0.6);
+    }
+
 }
 
 /* Mainheader Wrapper */
@@ -111,6 +140,55 @@ footer{
     border-width: 1px;
     border-color: var(--mdm-dark-color);
     box-shadow: 0px 7px 10px rgba(0,0,0, .5);
+}
+
+.mail-link{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Secction Styles */
+
+.section-page{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+.section-page:nth-child(even){
+    background-color: var(--mdm-offset-color);
+}
+
+.section-page:nth-child(odd){
+    background-color: var(--mdm-secondary-color);
+}
+
+.section-page:nth-last-child(2){
+    background-color: var(--mdm-secondary-color);
+}
+
+.section-page:last-child{
+    background-color: var(--mdm-offset-color);
+} 
+
+.section-cta{
+    background-color: var(--mdm-dark-color);
+    padding-top:2rem;
+    padding-bottom:2rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    color:var(--mdm-light-color);
+    text-align:center;
+}
+
+.cta-arrow{
+    color: var(--mdm-highlight-color);
+    font-size: 2.5rem;
+}
+
+.link-style{
+    text-decoration: none;
 }
 
 /* Media Queries */
@@ -159,6 +237,5 @@ footer{
         line-height: 1rem;
         font-weight:300;
         letter-spacing: .1rem;
-
     }
 }
