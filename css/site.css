@@ -46,6 +46,14 @@ main{
     flex: 1 0 auto;
 }
 
+h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1{
+    font-family: var(--mdm-subtitle-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--mdm-dark-color);
+}
+
 footer{
     flex-shrink: 0;
 }
