@@ -4,7 +4,7 @@
     --mdm-highlight-color: #baeeeb;
     --mdm-dark-color: #212121;
     --mdm-light-color: #ebf5fd;
-    --mdm-background-color: #1b1919cc;
+    --mdm-background-color: #ebd9d9cc;
     --mdm-title-color: var(--mdm-dark-color);
     --mdm-nav-toggler-glow: hsla(49, 71%, 61%, 0.685);
     --mdm-nav-toggler-color: var(--mdm-highlight-color);
@@ -153,6 +153,35 @@ footer{
 .mail-link{
     color: inherit;
     text-decoration: none;
+}
+
+/* ---------Footer Styles------ */
+.footer-bg-cta{
+    background: linear-gradient(to bottom, var(--mdm-background-color), var(--mdm-background-color) 50%, var(--mdm-dark-color) 50%, var(--mdm-dark-color) 100%);
+}
+
+.footer-cta{
+    border-radius: 10px;
+    background-color: var(--mdm-secondary-color);
+    width:75%;
+}
+
+.footer-main{
+    background-color: var(--mdm-dark-color);
+    color:var(--mdm-light-color);
+}
+
+.socialicons{
+    font-size: 2rem;
+}
+
+a.socialicons{
+    color: var(--mdm-offset-color);
+    opacity:1;
+}
+
+a.socialicons:hover{
+    color: var(--mdm-highlight-color);
 }
 
 /* Secction Styles */
