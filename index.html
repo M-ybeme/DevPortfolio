@@ -41,7 +41,7 @@
     
 </head>
 
-<body>
+<body  id="home">
        <nav class="navbar navbar-expand-lg  fixed-top navbar-dark" id="mainNav">
            <div class="container-xxl">
                <a class="navbar-brand" href="#">
@@ -57,13 +57,13 @@
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                        <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                           <a class="nav-link active" aria-current="page" href="#home">Home</a>
                        </li>
                        <li class="nav-item">
                            <a class="nav-link" href="#about">About</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="#skills">skills</a>
+                           <a class="nav-link" href="#skills">Skills</a>
                        </li>
                        <li class="nav-item">
                            <a class="nav-link" href="#projects">Projects</a>
@@ -83,7 +83,8 @@
 
        <!-- Header -->
 
-       <header class="container-xxl" id="home">
+       <header class="container-xxl">
+        <section>
         <div class="mainHeader">
             <div class="mainHeader-content h-100 d-flex align-items-center">
                 <div class="mainHeader-wrapper">
@@ -94,6 +95,7 @@
                 </div>
             </div>
         </div>
+    </section>
        </header>
 
        <!-- Main Container area -->
@@ -104,7 +106,7 @@
                 <div class="col-12 col-lg-4">
                     <picture>
                         <source  srcset="/img/dane_profile.jpg" media="(min-width: 991.98px)"/>
-                        <source  srcset="/img/dane_profile_982.jpg" media="(min-width: 767.98px)"/>
+                        <source  srcset="/img/dane_profile_992.jpg" media="(min-width: 767.98px)"/>
                         <source  srcset="/img/dane_profile_786.jpg" media="(min-width: 575.98px)"/>
                         <img src="/img/dane_profile_576.jpg" class="img-fluid profilePic">
                     </picture>
@@ -224,7 +226,8 @@
                             </picture>
                             <div class="hc-content">
                                 <p> A full stack bug tracker built with Asp.net MVC, C# and SQL.</p>
-                                <button type="button" class="btn btn-primary">Learn More</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ProjectOneModal">
+                                    Learn more
                             </div>
                         </div>
                     </div>
@@ -238,7 +241,8 @@
                             </picture>
                             <div class="hc-content">
                             <p> A full stack expense tracker built with Asp.net MVC, C# and SQL.</p>
-                            <button type="button" class="btn btn-primary">Learn More</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ProjectTwoModal">
+                                Learn more
                         </div>
                         </div>
                     </div>
@@ -251,8 +255,9 @@
                                 <img src="/img/logos/Blog_200.jpg">
                             </picture>
                         <div class="hc-content">
-                            <p> A full stack expense tracker built with Asp.net MVC, C# and SQL.</p>
-                            <button type="button" class="btn btn-primary">Learn More</button>
+                            <p> A tech blog where I write about some of what I learn.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ProjectThreeModal">
+                                Learn more
                         </div>
                         </div>
                     </div>
@@ -358,15 +363,15 @@
             <h1>Stuff I write about</h1>
             <p>I try to write on my blog on a regular basis. I like to share my knowledge.</p>
             <div class="d-flex flex-column align-itemss-center align-items-md-start">
-                <article class="card mb-4 blog-article">
+                <article class="card mb-4 blog-article text-black">
                     <div class="row blog-row g-0">
                         <div class="col-md-4 blog-header">
                             <a class="blog-imgage-link" href="#">
-                                <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog=image" alt="Flying Girl">
+                                <img src="/img/Blog/Blog_FlyingGirl.jpg" class="blog-image" alt="Flying Girl">
                             </a>
                             <div class="blog-date">
                                 <div class="blog-day">11</div>
-                                <div class="blog-month"> July</div>
+                                <div class="blog-month">July</div>
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -391,11 +396,11 @@
                     <div class="row blog-row g-0">
                         <div class="col-md-4 blog-header">
                             <a class="blog-imgage-link" href="#">
-                                <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog=image" alt="Decision Road">
+                                <img src="/img/Blog/Blog_DecisionRoad.jpg" class="blog-image" alt="Decision Road">
                             </a>
                             <div class="blog-date">
                                 <div class="blog-day">11</div>
-                                <div class="blog-month"> July</div>
+                                <div class="blog-month">July</div>
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -420,11 +425,11 @@
                     <div class="row blog-row g-0">
                         <div class="col-md-4 blog-header">
                             <a class="blog-imgage-link" href="#">
-                                <img src="/img/Blog/Blog_CodeTag.jpg" class="blog=image" alt="Coding Tags">
+                                <img src="/img/Blog/Blog_CodeTag.jpg" class="blog-image" alt="Coding Tags">
                             </a>
                             <div class="blog-date">
                                 <div class="blog-day">11</div>
-                                <div class="blog-month"> July</div>
+                                <div class="blog-month">July</div>
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -449,7 +454,7 @@
                     <div class="row blog-row g-0">
                         <div class="col-md-4 blog-header">
                             <a class="blog-imgage-link" href="#">
-                                <img src="/img/Blog/Blog_Database.jpg" class="blog=image" alt="database">
+                                <img src="/img/Blog/Blog_Database.jpg" class="blog-image" alt="database">
                             </a>
                             <div class="blog-date">
                                 <div class="blog-day">11</div>
@@ -552,6 +557,293 @@
 
         </div>
        </footer>
+
+       <!-- =======Modals------ -->
+
+       <!-- Modal -->
+<div class="modal fade" id="ProjectOneModal" tabindex="-1" aria-labelledby="ProjectOneModal" aria-hidden="true">
+    <div class="modal-dialog madal-dioalog-centered modal-xl modal-fullscreen-md-down">
+      <div class="modal-content"> 
+        <div class="modal-header">
+          <h5 class="modal-title" id="ProjectOneModalLabel">Incecticide</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <!-- -----Carosuel-------- -->
+                        <div id="ProjectOneCarousel" class="carousel slide carousel-dark" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#ProjectOneCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#ProjectOneCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#ProjectOneCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#ProjectOneCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="/img/logos/BugTracker_600.jpg" class="d-block w-100" alt="Bug Tracker">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100" alt="screenshot 1">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100" alt="screenshots 2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100" alt="screenshots 3">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#ProjectOneCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#ProjectOneCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <h3>
+                            Insecticide
+                        </h3>
+                        <p>
+                            Insecticide is a software defect tracking system.
+                            Commonly known as a bug tracker. Insectcide is built
+                            with ASP.NET, MVC, C# and SQL. A role based security
+                            system was implemented to create permission based roles.
+                            The roles of Admin , Project Manager, Developer and
+                            Submitter restrict what the user can see and do. The
+                            software allows for users to submit tickets and those
+                            tickets are tracked through status from Open to
+                            Complete.
+
+                        </p>
+                        <p>
+                            The system was built with C# and .Net in 3 weeks. The
+                            front end was developed with HTML, Javascript and
+                            Bootstrap. The back-end utlizies MVC and C#. The database
+                            was built with SQL Server and hosted on Azure. Please
+                                            visit the site and try it out.
+
+                        </p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4>Project Type:</h4>Web Application
+                            </li>
+                            <li class="list-group-item gy-2">
+                                <h4>Tech stack:</h4>
+                                <i class="devicon-html5-plain colored devicons"></i>
+                                <i class="devicon-css3-plain colored devicons"></i>
+                                <i class="devicon-bootstrap-plain colored devicons"></i>
+                                <i class="devicon-csharp-plain colored devicons"></i>
+                                <i class="devicon-postgresql-plain colored devicons"></i>
+                                <i class="devicon-javascript-plain colored devicons"></i>
+                                <i class="devicon-dotnetcore-plain colored devicons"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a type="button" href="#" class="btn btn-primary">Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="ProjectTwoModal" tabindex="-1" aria-labelledby="ProjectTwoModal" aria-hidden="true">
+    <div class="modal-dialog madal-dioalog-centered modal-xl modal-fullscreen-md-down">
+      <div class="modal-content"> 
+        <div class="modal-header">
+          <h5 class="modal-title" id="ProjectTwoModalLabel">Incecticide</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <!-- ---Modal Carousel------- -->
+                        <div id="ProjectTwoCarousel" class="carousel slide carousel-dark" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#ProjectTwoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#ProjectTwoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#ProjectTwoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#ProjectTwoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="/img/logos/BugTracker_600.jpg" class="d-block w-100" alt="Bug Tracker">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100" alt="screenshot 1">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100" alt="screenshots 2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100" alt="screenshots 3">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#ProjectTwoCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#ProjectTwoCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+
+
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <h3>
+                            Insecticide
+                        </h3>
+                        <p>
+                            Insecticide is a software defect tracking system.
+                            Commonly known as a bug tracker. Insectcide is built
+                            with ASP.NET, MVC, C# and SQL. A role based security
+                            system was implemented to create permission based roles.
+                            The roles of Admin , Project Manager, Developer and
+                            Submitter restrict what the user can see and do. The
+                            software allows for users to submit tickets and those
+                            tickets are tracked through status from Open to
+                            Complete.
+
+                        </p>
+                        <p>
+                            The system was built with C# and .Net in 3 weeks. The
+                            front end was developed with HTML, Javascript and
+                            Bootstrap. The back-end utlizies MVC and C#. The database
+                            was built with SQL Server and hosted on Azure. Please
+                                            visit the site and try it out.
+
+                        </p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4>Project Type:</h4>Web Application
+                            </li>
+                            <li class="list-group-item gy-2">
+                                <h4>Tech stack:</h4>
+                                <i class="devicon-html5-plain colored devicons"></i>
+                                <i class="devicon-css3-plain colored devicons"></i>
+                                <i class="devicon-bootstrap-plain colored devicons"></i>
+                                <i class="devicon-csharp-plain colored devicons"></i>
+                                <i class="devicon-postgresql-plain colored devicons"></i>
+                                <i class="devicon-javascript-plain colored devicons"></i>
+                                <i class="devicon-dotnetcore-plain colored devicons"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a type="button" href="#" class="btn btn-primary">Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="ProjectThreeModal" tabindex="-1" aria-labelledby="ProjectThreeModal" aria-hidden="true">
+    <div class="modal-dialog madal-dioalog-centered modal-xl modal-fullscreen-md-down">
+      <div class="modal-content"> 
+        <div class="modal-header">
+          <h5 class="modal-title" id="ProjectThreeModalLabel">Incecticide</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <!-- ------Carousel-------- -->
+                        <div id="ProjectThreeCarousel" class="carousel slide carousel-dark" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#ProjectThreeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#ProjectThreeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#ProjectThreeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#ProjectThreeCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="/img/logos/BugTracker_600.jpg" class="d-block w-100" alt="Bug Tracker">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100" alt="screenshot 1">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100" alt="screenshots 2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100" alt="screenshots 3">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#ProjectThreeCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#ProjectThreeCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <h3>
+                            Insecticide
+                        </h3>
+                        <p>
+                            Insecticide is a software defect tracking system.
+                            Commonly known as a bug tracker. Insectcide is built
+                            with ASP.NET, MVC, C# and SQL. A role based security
+                            system was implemented to create permission based roles.
+                            The roles of Admin , Project Manager, Developer and
+                            Submitter restrict what the user can see and do. The
+                            software allows for users to submit tickets and those
+                            tickets are tracked through status from Open to
+                            Complete.
+
+                        </p>
+                        <p>
+                            The system was built with C# and .Net in 3 weeks. The
+                            front end was developed with HTML, Javascript and
+                            Bootstrap. The back-end utlizies MVC and C#. The database
+                            was built with SQL Server and hosted on Azure. Please
+                                            visit the site and try it out.
+
+                        </p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4>Project Type:</h4>Web Application
+                            </li>
+                            <li class="list-group-item gy-2">
+                                <h4>Tech stack:</h4>
+                                <i class="devicon-html5-plain colored devicons"></i>
+                                <i class="devicon-css3-plain colored devicons"></i>
+                                <i class="devicon-bootstrap-plain colored devicons"></i>
+                                <i class="devicon-csharp-plain colored devicons"></i>
+                                <i class="devicon-postgresql-plain colored devicons"></i>
+                                <i class="devicon-javascript-plain colored devicons"></i>
+                                <i class="devicon-dotnetcore-plain colored devicons"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a type="button" href="#" class="btn btn-primary">Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

@@ -4,7 +4,7 @@
     --mdm-highlight-color: #baeeeb;
     --mdm-dark-color: #212121;
     --mdm-light-color: #ebf5fd;
-    --mdm-background-color: #ebd9d9cc;
+    --mdm-background-color: #634d75cc;
     --mdm-title-color: var(--mdm-dark-color);
     --mdm-nav-toggler-glow: hsla(49, 71%, 61%, 0.685);
     --mdm-nav-toggler-color: var(--mdm-highlight-color);
@@ -86,7 +86,7 @@ footer{
     height: 200px;
     background-repeat: no-repeat;
     background-position: right top;
-    background-color:var(--mdm-highlight-color);
+    background-color:var(--mdm-primary-color);
     color: var(--mdm-dark-color);
 }
 
@@ -157,7 +157,7 @@ footer{
 
 /* ---------Footer Styles------ */
 .footer-bg-cta{
-    background: linear-gradient(to bottom, var(--mdm-background-color), var(--mdm-background-color) 50%, var(--mdm-dark-color) 50%, var(--mdm-dark-color) 100%);
+    background: linear-gradient(to bottom, var(--mdm-background-color), var(--mdm-background-color) 50%, var(--mdm-background-color) 50%, var(--mdm-background-color) 100%);
 }
 
 .footer-cta{
@@ -167,7 +167,7 @@ footer{
 }
 
 .footer-main{
-    background-color: var(--mdm-dark-color);
+    background-color: var(--mdm-background-color);
     color:var(--mdm-light-color);
 }
 
