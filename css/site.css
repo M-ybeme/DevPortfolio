@@ -100,7 +100,7 @@ footer{
     overflow: hidden;
 }
 
-.maainHeader-cover>.mainHeader-content{
+.mainHeader-cover>.mainHeader-content{
     backdrop-filter: blur(3px) heu-rotate(120deg) brightness(50%) contrast(15%0) saturate(150%);
     -webkit-backdrop-filter: blur(3px) heu-rotate(120deg) brightness(50%) contrast(150%) saturate(150%);
 }
