@@ -4,11 +4,11 @@
     --mdm-highlight-color: #baeeeb;
     --mdm-dark-color: #212121;
     --mdm-light-color: #ebf5fd;
-    --mdm-background-color: #634d75cc;
+    --mdm-background-color: #411664cc;
     --mdm-title-color: var(--mdm-dark-color);
-    --mdm-nav-toggler-glow: hsla(49, 71%, 61%, 0.685);
+    --mdm-nav-toggler-glow: #e2c855af;
     --mdm-nav-toggler-color: var(--mdm-highlight-color);
-    --mdm-offset-color: #7b74e7;
+    --mdm-offset-color: #6056e1;
 
     --mdm-font-size: 1.2rem;
     --mdm-font-weight: 400;
@@ -46,7 +46,7 @@ main{
     flex: 1 0 auto;
 }
 
-h6,.h6,h5,.h5,h4,.h4,h3red,.h3,h2,.h2,h1,.h1{
+h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1{
     font-family: var(--mdm-subtitle-font);
     font-weight: 700;
     text-transform: uppercase;
