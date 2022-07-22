@@ -1,14 +1,14 @@
 :root{
     --mdm-primary-color: #49beb7;
-    --mdm-secondary-color: #6bbbe9;
+    --mdm-secondary-color: #62a9d2;
     --mdm-highlight-color: #baeeeb;
     --mdm-dark-color: #212121;
     --mdm-light-color: #ebf5fd;
-    --mdm-background-color: #411664cc;
+    --mdm-background-color: #551d82fd;
     --mdm-title-color: var(--mdm-dark-color);
     --mdm-nav-toggler-glow: #e2c855af;
     --mdm-nav-toggler-color: var(--mdm-highlight-color);
-    --mdm-offset-color: #6056e1;
+    --mdm-offset-color: #7b75cd;
 
     --mdm-font-size: 1.2rem;
     --mdm-font-weight: 400;
@@ -82,12 +82,14 @@ footer{
 
 /* Main Header Styles */
 .mainHeader{
-    background-image: url(/img/DevPortFolioBG_576.png);
+    background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
     height: 200px;
     background-repeat: no-repeat;
     background-position: right top;
-    background-color:var(--mdm-primary-color);
-    color: var(--mdm-dark-color);
+    background-color:var(--mdm-dark-color);
+    color: var(--mdm-light-color);
+    vertical-align: text-top;
+    text-align: left;
 }
 
 /* .mainHeader-cover{
@@ -138,7 +140,7 @@ footer{
     line-height: 1rem;
     font-weight: 300;
     letter-spacing: .09rem;
-    color: var(--mdm-dark-color);
+    color: var(--mdm-light-color);
     font-family:var(--mdm-subtitle-font);
 }
 
@@ -167,7 +169,7 @@ footer{
 }
 
 .footer-main{
-    background-color: var(--mdm-background-color);
+    background-color: var(--mdm-dark-color);
     color:var(--mdm-light-color);
 }
 
@@ -231,14 +233,14 @@ a.socialicons:hover{
 /* Media Queries */
 @media (min-width: 575.98px){
     .mainHeader{
-        background-image: url(/img/DevPortFolioBG_767.png);
+        background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
         height: 300px;
     }
 }
 
 @media (min-width: 767.98px){
     .mainHeader{
-        background-image: url(/img/DevPortFolioBG_992.png);
+        background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
         height: 300px;
     }
     .mainTitle{
@@ -255,14 +257,14 @@ a.socialicons:hover{
 
 @media (min-width: 991.98px){
     .mainHeader{
-        background-image: url(/img/DevPortFolioBG_1200.png);
+        background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
         height: 400px;
     }
 }
 
 @media (min-width: 1199.98px){
     .mainHeader{
-        background-image: url(/img/DevPortFolioBG_2560.png);
+        background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
         height:  500px;
     }
     .mainTitle{
