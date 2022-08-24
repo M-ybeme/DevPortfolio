@@ -230,6 +230,13 @@ a.socialicons:hover{
     text-decoration: none;
 }
 
+.line-clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
 /* Media Queries */
 @media (min-width: 575.98px){
     .mainHeader{
