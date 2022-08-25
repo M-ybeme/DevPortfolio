@@ -1,6 +1,6 @@
 //get blogs from api
 function fetchBlogData() {
-    const baseURL = "https://supernovablog.herokuapp.com/";
+    const baseURL = "https://supernovablog.herokuapp.com";
     const baseAPIURL = `${baseURL}/api/`;
     const baseContentURL = `${baseURL}/content/`;
 
