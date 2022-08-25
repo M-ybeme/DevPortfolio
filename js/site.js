@@ -2,7 +2,7 @@
 function fetchBlogData() {
     const baseURL = "https://supernovablog.herokuapp.com";
     const baseAPIURL = `${baseURL}/api/`;
-    const baseContentURL = `${baseURL}/content/`;
+    const baseContentURL = `${baseURL}/contnet/`;
 
     //https://cf-blog-net6.herokuapp.com/api/BlogPosts?num=3
     fetch(`${baseAPIURL}BlogPosts?num=3`)
