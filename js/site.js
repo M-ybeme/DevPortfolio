@@ -59,7 +59,7 @@ function displayBlogs(data, baseContentURL) {
 
         //format the blog content
         blogContentDiv = articleCard.querySelector('[data-blog="content"]');
-        blogContentDiv.innerHTML = article.content;
+        blogContentDiv.innerHTML = article.contnet;
 
         //format the read more link
         blogLink = articleCard.querySelector('[data-blog="readMoreLink"]');
