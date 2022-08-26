@@ -1,10 +1,10 @@
 :root{
     --mdm-primary-color: #49beb7;
-    --mdm-secondary-color: #62a9d2;
+    --mdm-secondary-color: #62a3c8;
     --mdm-highlight-color: #baeeeb;
     --mdm-dark-color: #212121;
     --mdm-light-color: #ebf5fd;
-    --mdm-background-color: #551d82fd;
+    --mdm-background-color: #13132efd;
     --mdm-title-color: var(--mdm-dark-color);
     --mdm-nav-toggler-glow: #e2c855af;
     --mdm-nav-toggler-color: var(--mdm-highlight-color);
