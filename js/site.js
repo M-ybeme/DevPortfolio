@@ -12,6 +12,30 @@ function fetchBlogData() {
     })
 }
 
+const text = `I am a software developer based in the United States. I have many web applications under my belt.
+I have been successful in taking a company's idea and bringing it to life. I mainly use C# and .NET
+to build web applications. I can take an idea and turn it into meaningful and useful software products.
+The ability to transform requirements into useful software helps me prioritize tasks,
+and deliver a quality product quickly. Take a look at my portfolio work and let's see if we can work
+together on your next project.`;
+
+const el = document.getElementById("typewriter");
+let index = 0;
+function type(){
+    if (index < text.length) {
+        el.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, 50);
+    } else {setTimeout(() => {
+        el.innerHTML = '';
+        index = 0;
+        type();
+    }, 5000);}
+}
+
+document.addEventListener("DOMContentLoaded", type);
+
+
 
 //this will display blogs on page
 function displayBlogs(data, baseContentURL) {
