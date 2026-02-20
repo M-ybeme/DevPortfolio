@@ -12,12 +12,7 @@ function fetchBlogData() {
     })
 }
 
-const text = `I am a software developer based in the United States. I have many web applications under my belt.
-I have been successful in taking a company's idea and bringing it to life. I mainly use C# and .NET
-to build web applications. I can take an idea and turn it into meaningful and useful software products.
-The ability to transform requirements into useful software helps me prioritize tasks,
-and deliver a quality product quickly. Take a look at my portfolio work and let's see if we can work
-together on your next project.`;
+const text = `I'm the sole front-end developer on a production .NET 8 Blazor application at EPES Logistics, building shipment quoting workflows and UI that stays stable under real business complexity. Previously at DBMG I built QA systems and automated build verification so releases could ship with confidence. Outside of work, I maintain two large side projects: The DM's Toolbox and PDF Workbench.`;
 
 const el = document.getElementById("typewriter");
 let index = 0;
