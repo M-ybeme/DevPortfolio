@@ -12,7 +12,7 @@ function fetchBlogData() {
     })
 }
 
-const text = `I'm the sole front-end developer on a production .NET 8 Blazor application at EPES Logistics, building shipment quoting workflows and UI that stays stable under real business complexity. Previously at DBMG I built QA systems and automated build verification so releases could ship with confidence. Outside of work, I maintain two large side projects: The DM's Toolbox and PDF Workbench.`;
+const text = `I am the sole front-end developer on a production .NET 8 Blazor application at EPES Logistics, building shipment quoting workflows and UI that stays stable under real business complexity. Earlier in my career, I built QA automation and release validation systems. Outside of work, I maintain independent software products with ongoing feature releases, versioned architecture, and long-term technical iteration.`;
 
 const el = document.getElementById("typewriter");
 let index = 0;

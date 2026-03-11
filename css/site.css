@@ -104,7 +104,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 /* ---- Main Header / Hero ---- */
 .mainHeader {
-    background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
+    background-image: linear-gradient(to right, rgba(2,10,6,0.85) 40%, rgba(2,10,6,0.55) 100%), url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
     height: 200px;
     background-repeat: no-repeat;
     background-position: right top;
@@ -387,13 +387,13 @@ body .modal .btn-secondary:hover {
 /* ---- Media Queries ---- */
 @media (min-width: 575.98px) {
     .mainHeader {
-        background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
+        background-image: linear-gradient(to right, rgba(2,10,6,0.85) 40%, rgba(2,10,6,0.55) 100%), url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
         height: 300px;
     }
 }
 @media (min-width: 767.98px) {
     .mainHeader {
-        background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
+        background-image: linear-gradient(to right, rgba(2,10,6,0.85) 40%, rgba(2,10,6,0.55) 100%), url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
         height: 300px;
     }
     .mainTitle {
@@ -409,13 +409,13 @@ body .modal .btn-secondary:hover {
 }
 @media (min-width: 991.98px) {
     .mainHeader {
-        background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
+        background-image: linear-gradient(to right, rgba(2,10,6,0.85) 40%, rgba(2,10,6,0.55) 100%), url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
         height: 400px;
     }
 }
 @media (min-width: 1199.98px) {
     .mainHeader {
-        background-image: url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
+        background-image: linear-gradient(to right, rgba(2,10,6,0.85) 40%, rgba(2,10,6,0.55) 100%), url(/img/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
         height: 500px;
     }
     .mainTitle {
@@ -428,4 +428,63 @@ body .modal .btn-secondary:hover {
         font-weight: 300;
         letter-spacing: .1rem;
     }
+}
+
+/* =============================================
+   Project Card Labels
+   ============================================= */
+.project-title {
+    color: var(--mdm-light-color);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+
+.project-summary {
+    color: #9ca3af;
+    font-size: 0.82rem;
+    text-align: center;
+    max-width: 225px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1199.98px) {
+    .project-summary {
+        max-width: 300px;
+    }
+}
+
+/* =============================================
+   Systems I Work With Section
+   ============================================= */
+.system-card {
+    background-color: var(--mdm-secondary-color);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 8px;
+    height: 100%;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.system-card:hover {
+    border-color: var(--mdm-primary-color);
+    transform: translateY(-2px);
+}
+
+.system-card h5 {
+    color: var(--mdm-highlight-color);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.system-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.system-icon {
+    font-size: 1.5rem;
+    color: var(--mdm-primary-color);
 }
