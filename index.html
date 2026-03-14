@@ -312,6 +312,24 @@
                     <div class="hc-wrapper">
                         <div class="hc-card">
                             <picture>
+                                <source srcset="/img/logos/LedgerlyLogo.png" media="(min-width: 911.98px)" />
+                                <img src="/img/logos/LedgerlyLogo.png" alt="Ledgerly">
+                            </picture>
+                            <div class="hc-content">
+                                <p>Privacy-first financial simulation platform — debt payoff strategies, scenario comparison, budget tracking, reality drift, and credit score projection. Live on Railway.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ProjectThreeModal">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="project-title mt-3">Ledgerly</h4>
+                    <p class="project-summary">Privacy-first financial simulation platform — debt payoff strategies, scenario comparison, budget tracking, and credit score projection.</p>
+                </div>
+                <div class="col-auto">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
                                 <source srcset="/img/DMsToolboxLogo.png" media="(min-width: 911.98px)" />
                                 <img src="/img/DMsToolboxLogo.png" alt="The DM's Toolbox">
                             </picture>
@@ -343,24 +361,6 @@
                     </div>
                     <h4 class="project-title mt-3">PDF Workbench</h4>
                     <p class="project-summary">Privacy-first PDF toolkit: merge, split, reorder, and compress entirely client-side — no uploads, no backend.</p>
-                </div>
-                <div class="col-auto">
-                    <div class="hc-wrapper">
-                        <div class="hc-card">
-                            <picture>
-                                <source srcset="/img/logos/LedgerlyLogo.png" media="(min-width: 911.98px)" />
-                                <img src="/img/logos/LedgerlyLogo.png" alt="Ledgerly">
-                            </picture>
-                            <div class="hc-content">
-                                <p>Full-stack budgeting platform built with Blazor, ASP.NET Core API, PostgreSQL, JWT auth, and Railway deployment. Currently in active development.</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ProjectThreeModal">
-                                    Learn More
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="project-title mt-3">Ledgerly <span class="badge bg-warning text-dark" style="font-size:0.55rem; vertical-align: middle;">In Development</span></h4>
-                    <p class="project-summary">Full-stack budgeting platform built with Blazor WASM, ASP.NET Core API, PostgreSQL, and JWT auth.</p>
                 </div>
             </div>
         </section>
@@ -719,36 +719,68 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-md-5">
-                                <img src="/img/logos/LedgerlyLogo.png" class="d-block w-100" alt="Ledgerly">
+                                <div id="ledgerlyCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#ledgerlyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#ledgerlyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#ledgerlyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#ledgerlyCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner rounded">
+                                        <div class="carousel-item active">
+                                            <img src="/img/logos/LedgerlyLogo.png" class="d-block w-100" alt="Ledgerly Logo">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/screenshots/LBTSC1.png" class="d-block w-100" alt="Ledgerly Dashboard">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/screenshots/LBTSC2.png" class="d-block w-100" alt="Ledgerly Cash Flow">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/screenshots/LBTSC3.png" class="d-block w-100" alt="Ledgerly Expenses Table">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#ledgerlyCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#ledgerlyCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                             <div class="col-12 col-md-7">
                                 <h3>Ledgerly</h3>
                                 <p>
-                                    Full-stack budgeting platform built to own the full application boundary — frontend, backend, authentication, persistence, and deployment. The goal: prove end-to-end application ownership beyond the UI layer.
+                                    Privacy-first financial simulation platform. Models debt payoff strategies, compares scenarios side-by-side, tracks reality drift against the plan, and projects credit score impact — deployed and live on Railway.
                                 </p>
                                 <ul class="list-group mb-3">
                                     <li class="list-group-item">
                                         <strong>Architecture:</strong>
                                         <ul class="mt-2">
-                                            <li>Blazor WASM frontend connected to an ASP.NET Core API backend</li>
-                                            <li>PostgreSQL with EF Core for persistence; user-owned data isolation enforced at the API layer</li>
-                                            <li>JWT authentication with SendGrid email flows for password reset and account recovery</li>
-                                            <li>Deployed to Railway for full-stack hosting with environment-based configuration</li>
+                                            <li>Clean layered architecture: Domain, Application, Infrastructure, Api, Web — no EF Core references in Domain or Application</li>
+                                            <li>Blazor WASM frontend + ASP.NET Core API; all user data isolated via global EF query filters scoped to JWT identity</li>
+                                            <li>PostgreSQL with EF Core 8; migrations auto-apply at startup on Railway deploy</li>
+                                            <li>JWT authentication with ASP.NET Core Identity; SendGrid for email confirmation and password reset flows</li>
                                         </ul>
                                     </li>
                                     <li class="list-group-item">
-                                        <strong>Technical Challenges:</strong>
+                                        <strong>Key Features:</strong>
                                         <ul class="mt-2">
-                                            <li>Designing a secure auth flow end-to-end — JWT issuance, token validation, and protected route enforcement</li>
-                                            <li>Structuring budgeting domain models that stay clean as the feature set grows</li>
-                                            <li>Managing full-stack deployment and environment configuration without a managed platform</li>
+                                            <li>Snowball and Avalanche debt payoff projections with month-by-month amortization tables</li>
+                                            <li>Side-by-side scenario comparison — months saved and interest saved between any two plans</li>
+                                            <li>Reality tracking — log actual payments, see drift from the plan, get a live-updated payoff timeline</li>
+                                            <li>Range-based credit score projection tied to payoff strategy; never claims FICO accuracy</li>
+                                            <li>Dashboard with cash flow charts, debt balance bars, planned vs actual income/expense tracking</li>
+                                            <li>Dark/light theme, mobile-responsive sidebar, demo data seeded on first load</li>
                                         </ul>
                                     </li>
                                     <li class="list-group-item">
                                         <strong>Why I Built It:</strong>
                                         <ul class="mt-2">
-                                            <li>To move beyond front-end specialization and demonstrate ownership of the full application stack</li>
-                                            <li>To build something real and maintainable — not a tutorial project, but a product with a real domain</li>
+                                            <li>To demonstrate full-stack ownership — not just UI, but auth, persistence, deployment, and domain modeling</li>
+                                            <li>To build a real product with a real domain, not a tutorial clone</li>
                                         </ul>
                                     </li>
                                     <li class="list-group-item">
@@ -756,8 +788,9 @@
                                         <span class="me-2">Blazor WASM</span>
                                         <span class="me-2">ASP.NET Core</span>
                                         <span class="me-2">PostgreSQL</span>
-                                        <span class="me-2">EF Core</span>
+                                        <span class="me-2">EF Core 8</span>
                                         <span class="me-2">JWT</span>
+                                        <span class="me-2">Radzen Blazor</span>
                                         <span class="me-2">Railway</span>
                                         <span>SendGrid</span>
                                     </li>
@@ -768,7 +801,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <span class="text-muted fst-italic">Coming soon — in active development</span>
+                    <a href="https://courteous-intuition-production-30ff.up.railway.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
                 </div>
             </div>
         </div>
