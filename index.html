@@ -303,7 +303,7 @@
                 <div class="col-12">
                     <h1>Things I've Built</h1>
                     <p>
-                        These are the projects I actively maintain today. They reflect how I build real products: UI architecture, performance, and reliability.
+                        These are the products I actively maintain today, spanning production UI architecture, client-side tooling, and full-stack application design.
                     </p>
                 </div>
             </div>
@@ -316,7 +316,7 @@
                                 <img src="/img/logos/LedgerlyLogo.png" alt="Ledgerly">
                             </picture>
                             <div class="hc-content">
-                                <p>Privacy-first financial simulation platform — debt payoff strategies, scenario comparison, budget tracking, reality drift, and credit score projection. Live on Railway.</p>
+                                <p>Full-stack financial planning platform with clean layered architecture, debt projection, scenario comparison, budgeting, exports, and production deployment on Railway.</p>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ProjectThreeModal">
                                     Learn More
                                 </button>
@@ -324,7 +324,7 @@
                         </div>
                     </div>
                     <h4 class="project-title mt-3">Ledgerly</h4>
-                    <p class="project-summary">Privacy-first financial simulation platform — debt payoff strategies, scenario comparison, budget tracking, and credit score projection.</p>
+                    <p class="project-summary">Privacy-first financial planning platform with debt payoff simulation, scenario comparison, budgeting, exports, and credit projection — shipped as a full-stack product on Railway.</p>
                 </div>
                 <div class="col-auto">
                     <div class="hc-wrapper">
@@ -712,7 +712,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="ProjectThreeModalLabel">Ledgerly</h5>
+                    <h5 class="modal-title" id="ProjectThreeModalLabel">Ledgerly <span class="badge bg-success ms-2" style="font-size:0.65rem;vertical-align:middle;">Shipped v1.0 — Live on Railway</span></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -753,27 +753,36 @@
                             <div class="col-12 col-md-7">
                                 <h3>Ledgerly</h3>
                                 <p>
-                                    Privacy-first financial simulation platform. Models debt payoff strategies, compares scenarios side-by-side, tracks reality drift against the plan, and projects credit score impact — deployed and live on Railway.
+                                    Ledgerly is a shipped full-stack financial planning platform built with Blazor, ASP.NET Core API, PostgreSQL, EF Core, and JWT authentication using clean layered architecture. It models debt payoff strategies, scenario comparison, budgeting, reality tracking, credit projection, and export workflows in a production-style SaaS application deployed on Railway.
                                 </p>
                                 <ul class="list-group mb-3">
                                     <li class="list-group-item">
                                         <strong>Architecture:</strong>
                                         <ul class="mt-2">
-                                            <li>Clean layered architecture: Domain, Application, Infrastructure, Api, Web — no EF Core references in Domain or Application</li>
-                                            <li>Blazor WASM frontend + ASP.NET Core API; all user data isolated via global EF query filters scoped to JWT identity</li>
-                                            <li>PostgreSQL with EF Core 8; migrations auto-apply at startup on Railway deploy</li>
-                                            <li>JWT authentication with ASP.NET Core Identity; SendGrid for email confirmation and password reset flows</li>
+                                            <li>Clean layered architecture across Domain, Application, Infrastructure, API, and Web projects with no EF Core references in Domain or Application</li>
+                                            <li>Blazor Server frontend + ASP.NET Core API with PostgreSQL/EF Core persistence and user isolation enforced through global query filters</li>
+                                            <li>JWT authentication with rotating refresh tokens, ASP.NET Core Identity, and Google OAuth support</li>
+                                            <li>Production deployment on Railway with auto-applied migrations, health checks, structured logging, and environment-based configuration</li>
                                         </ul>
                                     </li>
                                     <li class="list-group-item">
                                         <strong>Key Features:</strong>
                                         <ul class="mt-2">
                                             <li>Snowball and Avalanche debt payoff projections with month-by-month amortization tables</li>
-                                            <li>Side-by-side scenario comparison — months saved and interest saved between any two plans</li>
-                                            <li>Reality tracking — log actual payments, see drift from the plan, get a live-updated payoff timeline</li>
-                                            <li>Range-based credit score projection tied to payoff strategy; never claims FICO accuracy</li>
-                                            <li>Dashboard with cash flow charts, debt balance bars, planned vs actual income/expense tracking</li>
-                                            <li>Dark/light theme, mobile-responsive sidebar, demo data seeded on first load</li>
+                                            <li>Side-by-side scenario comparison showing months saved and interest saved</li>
+                                            <li>Reality tracking with logged payments, drift indicators, and updated payoff timelines</li>
+                                            <li>Monthly budgeting, planned expenses, recurring expenses, income tracking, and savings goals</li>
+                                            <li>Range-based credit score projection with explicit assumption boundaries</li>
+                                            <li>CSV and JSON export, dashboard charts, overdue notifications, dark/light theme, and responsive UI</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Security &amp; Production:</strong>
+                                        <ul class="mt-2">
+                                            <li>Two-factor authentication via TOTP authenticator apps</li>
+                                            <li>Google OAuth and JWT + rotating refresh token auth flows</li>
+                                            <li>Rate limiting on auth endpoints and health check endpoint for uptime monitoring</li>
+                                            <li>Serilog structured logging and background overdue-notification email service</li>
                                         </ul>
                                     </li>
                                     <li class="list-group-item">
@@ -785,9 +794,9 @@
                                     </li>
                                     <li class="list-group-item">
                                         <h4>Tech Stack:</h4>
-                                        <span class="me-2">Blazor WASM</span>
-                                        <span class="me-2">ASP.NET Core</span>
-                                        <span class="me-2">PostgreSQL</span>
+                                        <i class="devicon-csharp-plain colored devicons" title="C# / Blazor Server"></i>
+                                        <i class="devicon-dotnetcore-plain colored devicons" title="ASP.NET Core"></i>
+                                        <i class="devicon-postgresql-plain colored devicons" title="PostgreSQL"></i>
                                         <span class="me-2">EF Core 8</span>
                                         <span class="me-2">JWT</span>
                                         <span class="me-2">Radzen Blazor</span>
