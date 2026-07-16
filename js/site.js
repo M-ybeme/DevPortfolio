@@ -12,7 +12,7 @@ function fetchBlogData() {
     })
 }
 
-const text = `I am the sole front-end developer on a production .NET 8 Blazor application at EPES Logistics, building shipment quoting workflows and UI that stays stable under real business complexity. Earlier in my career, I built QA automation and release validation systems. Outside of work, I maintain independent software products with ongoing feature releases, versioned architecture, and long-term technical iteration.`;
+const text = `I am a full-stack application developer working across a React and TypeScript frontend, .NET 8 services, shared API contracts, database changes, testing, and CI/CD on an enterprise logistics platform. My role includes delivering features across repositories, reviewing and gating code, investigating contract and data-model issues, and diagnosing application and infrastructure problems before they reach production. Earlier in my career, I built QA automation and release-validation systems. Outside of work, I design and maintain independent software products through sustained releases, production deployment, and long-term architectural iteration.`;
 
 const el = document.getElementById("typewriter");
 let index = 0;
