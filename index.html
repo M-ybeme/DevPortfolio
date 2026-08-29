@@ -321,7 +321,25 @@
                     </p>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3 gy-4 justify-content-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 justify-content-center">
+                <div class="col-auto">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/WorldbinderLogo.png" media="(min-width: 911.98px)" />
+                                <img src="/img/WorldbinderLogo.png" alt="Worldbinder">
+                            </picture>
+                            <div class="hc-content">
+                                <p>Multi-tenant, permission-aware campaign encyclopedia and continuity manager for tabletop RPGs — full-stack SaaS with field-level authorization, wiki-linked entities, and audit history.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ProjectFourModal">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="project-title mt-3">Worldbinder</h4>
+                    <p class="project-summary">Permission-aware campaign continuity platform for TTRPGs — multi-tenant SaaS with entity relationships, revision history, and campaign-scoped authorization. Live on Railway.</p>
+                </div>
                 <div class="col-auto">
                     <div class="hc-wrapper">
                         <div class="hc-card">
@@ -348,7 +366,7 @@
                                 <img src="/img/DMsToolboxLogo.png" alt="The DM's Toolbox">
                             </picture>
                             <div class="hc-content">
-                                <p>Browser-based application suite with modular systems for character management, initiative tracking, generators, import/export pipelines, content packs, and long-term feature versioning.</p>
+                                <p>Browser-based tabletop RPG suite: initiative tracking, a lightweight battle map VTT, character management, encounter building, and a Notion-style campaign journal — all local-first and offline-capable.</p>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ProjectOneModal">
                                     Learn More
                                 </button>
@@ -356,7 +374,7 @@
                         </div>
                     </div>
                     <h4 class="project-title mt-3">The DM's Toolbox</h4>
-                    <p class="project-summary">Modular browser-based tabletop toolkit with local-first persistence and long-term feature versioning.</p>
+                    <p class="project-summary">Modular browser-based tabletop toolkit — initiative tracking, battle map VTT, and campaign journaling with local-first persistence.</p>
                 </div>
                 <div class="col-auto">
                     <div class="hc-wrapper">
@@ -366,7 +384,7 @@
                                 <img src="/img/PDFWorkbenchLogo.png" alt="PDF Workbench">
                             </picture>
                             <div class="hc-content">
-                                <p>Client-side PDF toolkit: merge, split, reorder, and compress — no file uploads. Built around a modular client-side tool architecture to support feature expansion without backend dependency.</p>
+                                <p>Client-side PDF toolkit: view, merge, split, edit pages, convert images, compress, and sign — no file uploads. Eight independently-scoped tools sharing a modular client-side architecture.</p>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ProjectTwoModal">
                                     Learn More
                                 </button>
@@ -374,7 +392,7 @@
                         </div>
                     </div>
                     <h4 class="project-title mt-3">PDF Workbench</h4>
-                    <p class="project-summary">Privacy-first PDF toolkit: merge, split, reorder, and compress entirely client-side — no uploads, no backend.</p>
+                    <p class="project-summary">Privacy-first PDF toolkit: view, merge, split, sign, convert, and compress — entirely client-side, no uploads, no backend.</p>
                 </div>
             </div>
         </section>
@@ -576,9 +594,9 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-7">
-                                <h3>The DM's Toolbox</h3>
+                                <h3>The DM's Toolbox <span class="badge bg-secondary ms-2" style="font-size:0.65rem;vertical-align:middle;">v2.3.4</span></h3>
                                 <p>
-                                    Built for personal use and grown organically to 3,000+ users at launch with 200–300 weekly active users across 2+ years of versioned releases. Browser-based application suite with modular systems for character management, initiative tracking, generators, import/export pipelines, content packs, and long-term feature versioning. Designed as a practical, offline-friendly DM toolkit with sustained iteration over time.
+                                    Built for personal use and grown organically to 3,000+ users at launch with 200–300 weekly active users across 2+ years of versioned releases. A full browser-based suite for tabletop RPG Game Masters: initiative tracking with combat automation, a lightweight battle map VTT, guided character creation, encounter building, a Notion-style campaign journal, a mid-session compendium, and improvisation generators — all offline-capable, no login, no tracking.
                                 </p>
                                 <p>
                                     Focus areas include modular architecture, local-first persistence, feature expansion, and SRD-safe content handling.
@@ -587,8 +605,10 @@
                                     <li class="list-group-item">
                                         <strong>Architecture:</strong>
                                         <ul class="mt-2">
-                                            <li>Modular tool system — each feature independently scoped with shared persistence layer</li>
-                                            <li>Local-first design: localStorage-backed state with import/export pipelines for portability</li>
+                                            <li>Modular tool system — Initiative Tracker, Battle Map, Character Manager, Encounter Builder, Compendium, Journal, and Generators each independently scoped with a shared persistence layer</li>
+                                            <li>Battle Map: canvas-based lightweight VTT with grid calibration, token HP/conditions/auras/vision cones, paintable fog-of-war, and persistent measurements</li>
+                                            <li>Journal: TipTap-based rich text editor with slash commands, <code>[[wikilinks]]</code> with a backlinks panel, and multi-format export (TXT/MD/DOCX/PDF)</li>
+                                            <li>Local-first design: LocalStorage/IndexedDB-backed state with import/export pipelines for portability</li>
                                             <li>SRD-safe content pack system for extensible data without licensing conflicts</li>
                                         </ul>
                                     </li>
@@ -671,9 +691,9 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-7">
-                                <h3>PDF Workbench</h3>
+                                <h3>PDF Workbench <span class="badge bg-secondary ms-2" style="font-size:0.65rem;vertical-align:middle;">v0.9.0</span></h3>
                                 <p>
-                                    Client-side PDF toolkit: view, merge, split, reorder pages, convert images to PDF, and compress — without uploading files to a server. Built around a modular client-side tool architecture to support feature expansion without backend dependency.
+                                    A complete client-side PDF toolkit: view, merge, split, reorder/rotate pages, convert images to PDF, compress, add signatures, and export pages as images — without uploading files to a server. Built around a modular client-side tool architecture to support feature expansion without backend dependency.
                                 </p>
                                 <p>
                                     Privacy-first by design. All processing happens in the browser using pdf.js for rendering and pdf-lib for manipulation. No backend required.
@@ -682,8 +702,9 @@
                                     <li class="list-group-item">
                                         <strong>Architecture:</strong>
                                         <ul class="mt-2">
-                                            <li>Each tool (merge, split, compress, convert) is independently scoped with a shared file-handling layer</li>
-                                            <li>pdf.js for rendering, pdf-lib for manipulation — no backend or server-side processing</li>
+                                            <li>Eight independently-scoped tools — Viewer, Merge, Split, Page Editor, Images→PDF, Compression, Signatures, and PDF→Images — sharing a common file-handling layer</li>
+                                            <li>pdf.js for rendering, pdf-lib for manipulation, JSZip for bundled multi-file exports — no backend or server-side processing</li>
+                                            <li>Zustand for lightweight global UI state; Tailwind CSS with a custom dual-theme design system</li>
                                             <li>Modular structure designed for ongoing feature addition without architectural rework</li>
                                         </ul>
                                     </li>
@@ -691,7 +712,8 @@
                                         <strong>Technical Challenges:</strong>
                                         <ul class="mt-2">
                                             <li>Managing large file operations entirely in-browser without memory or performance degradation</li>
-                                            <li>Maintaining test coverage across client-side PDF workflows with Vitest and Playwright</li>
+                                            <li>Canvas rasterization + JPEG re-encoding for compression quality presets without visible artifacting</li>
+                                            <li>Maintaining test coverage across eight independent client-side PDF workflows with Vitest and Playwright</li>
                                         </ul>
                                     </li>
                                     <li class="list-group-item">
@@ -705,6 +727,7 @@
                                         <h4>Tech Stack:</h4>
                                         <i class="devicon-react-original colored devicons"></i>
                                         <i class="devicon-typescript-plain colored devicons"></i>
+                                        <i class="devicon-tailwindcss-plain colored devicons"></i>
                                         <i class="devicon-javascript-plain colored devicons"></i>
                                     </li>
                                 </ul>
@@ -825,6 +848,101 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <a href="https://courteous-intuition-production-30ff.up.railway.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Worldbinder -->
+    <div class="modal fade" id="ProjectFourModal" tabindex="-1" aria-labelledby="ProjectFourModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ProjectFourModalLabel">Worldbinder <span class="badge bg-success ms-2" style="font-size:0.65rem;vertical-align:middle;">Live — Active Development</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <div id="ProjectFourCarousel" class="carousel slide carousel-dark" data-bs-ride="true">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#ProjectFourCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#ProjectFourCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#ProjectFourCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner rounded">
+                                        <div class="carousel-item active">
+                                            <img src="/img/WorldbinderLogo.png" class="d-block w-100" alt="Worldbinder">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/screenshots/Worldbinder-sc1.png" class="d-block w-100" alt="Worldbinder Dashboard">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/screenshots/Worldbinder-sc2.png" class="d-block w-100" alt="Worldbinder World / Entity list">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#ProjectFourCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#ProjectFourCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <h3>Worldbinder</h3>
+                                <p>
+                                    A multi-tenant, permission-aware knowledge-management platform built for complex campaign continuity in tabletop RPGs — not a notes app. Built as a proper modular-monolith SaaS with React 19, NestJS 11, PostgreSQL/Drizzle ORM, and Redis, deployed to production on Railway at a custom domain and developed through 30+ changelog-tracked milestone releases.
+                                </p>
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item">
+                                        <strong>Architecture:</strong>
+                                        <ul class="mt-2">
+                                            <li>Modular monolith (NestJS API + separate worker process sharing one database for background jobs) rather than microservices, with React 19/Vite frontend and Drizzle ORM over PostgreSQL</li>
+                                            <li>Campaign-scoped multi-tenancy with a full role matrix (Owner/GM/Editor/Player/Viewer) enforced through a guard-plus-policy-service split, not a single roles guard</li>
+                                            <li>Field-level authorization: GM-only content and entities return a 404 rather than a 403 to unauthorized viewers, so their existence is never disclosed</li>
+                                            <li>Short-lived JWT access tokens kept in-memory on the frontend (never localStorage) plus rotating, HttpOnly-cookie refresh tokens with reuse detection that revokes the whole session family on replay</li>
+                                            <li>Campaign encyclopedia across 11 typed entity kinds with typed relationships, <code>[[wikilink]]</code> mentions, backlinks, revision history, audit logging, timeline/calendar, plot threads, sessions, and a presigned-upload attachment pipeline</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Technical Challenges:</strong>
+                                        <ul class="mt-2">
+                                            <li>Enforcing field-level and entity-level visibility consistently across entities, relationships, backlinks, and search without ever leaking that hidden content exists</li>
+                                            <li>Integration tests run against real Postgres/Redis/Mailpit instances rather than mocks by design, plus Playwright end-to-end coverage driving a real browser — caught bugs (like a StrictMode double-invoke effect bug) that curl-only testing never would have</li>
+                                            <li>Optimistic concurrency (409 on stale writes) paired with offline-resilient autosave — failed saves persist to IndexedDB and restore on next visit instead of being lost</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <strong>Why I Built It:</strong>
+                                        <ul class="mt-2">
+                                            <li>To ship a real multi-tenant SaaS product end-to-end — auth, authorization, background workers, and production infrastructure — not a tutorial clone</li>
+                                            <li>To practice sustained, milestone-based delivery: a scoped roadmap, an honest changelog, and real deployment to a domain I own</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4>Tech Stack:</h4>
+                                        <i class="devicon-react-original colored devicons" title="React 19"></i>
+                                        <i class="devicon-typescript-plain colored devicons" title="TypeScript"></i>
+                                        <i class="devicon-nestjs-plain colored devicons" title="NestJS 11"></i>
+                                        <i class="devicon-postgresql-plain colored devicons" title="PostgreSQL"></i>
+                                        <i class="devicon-redis-plain colored devicons" title="Redis"></i>
+                                        <span class="me-2">Drizzle ORM</span>
+                                        <span class="me-2">Turborepo</span>
+                                        <span>Railway</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a type="button" href="https://github.com/M-ybeme/Worldbinder" class="btn btn-outline-dark" target="_blank">View Code</a>
+                    <a href="https://worldbinder.net/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
                 </div>
             </div>
         </div>
